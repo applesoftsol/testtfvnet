@@ -5,3 +5,12 @@ provider "azurerm" {
   client_secret   = "hHI7Q~FX_Jrnbu1QKyOguCjExUDjY.gHIkyst"
   tenant_id       = "1b478c1a-de95-4cca-b620-81b2773ddff3"
 }
+
+terraform {
+  backend "azurerm" {
+    storage_account_name = "sareoiufdgkdfk"
+    container_name       = "container1"
+    key                  = "terraform.tfstate"
+    access_key = "Lt6ge2MlxFz8KIUwIDv0IE7BQ+aIet++7btHuQ5zphJoiLOUtwoMAN5T3jqADG57L0bLXW9SV4C7+AStfxN6uA=="
+  }
+}
